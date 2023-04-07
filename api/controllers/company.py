@@ -1,6 +1,6 @@
 from django.http import JsonResponse
 from django.views.decorators.http import require_POST
-from api.repositories.company_repository import create_company
+from api.repositories.company import create_company
 
 @require_POST
 def create_company(request):
