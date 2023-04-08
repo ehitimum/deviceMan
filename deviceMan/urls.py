@@ -16,7 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from api.controllers.company import create_company
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('companies/', create_company, name='create-company'),
 ]
